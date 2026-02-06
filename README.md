@@ -30,8 +30,7 @@ LangEmotionHub 起源於對高齡化社會與情感陪伴需求的觀察，目�
 - 與後端模型服務 API 串接
 
 後端專案請參考：  
-👉 [LangEmotionHub-api]()
-
+👉 [LangEmotionHub-api](https://github.com/LinZKai/LangEmotionHub-api)
 
 
 ## 核心功能
@@ -67,20 +66,17 @@ LangEmotionHub 起源於對高齡化社會與情感陪伴需求的觀察，目�
 
 ## 專案結構概覽
 
+```bash
 src/
-
  ├── components/ # 可重用 UI 與功能元件
-
  ├── routes/ # 各頁面容器與路由守門元件（PrivateRoute）
-
  ├── utils/ # API 呼叫與工具函數封裝
-
  └── index.js # 應用入口與 React Router 設定
+```
 
 - `routes` 目錄負責頁面層結構
 - 細部 UI 與邏輯拆分於 `components`
 - 所有路由設定集中於 `index.js`
-
 
 
 ## 安裝與執行
@@ -91,18 +87,16 @@ npm start
 ```
 
 
-
 ## 系統畫面預覽
 
 ### 1.上傳訓練資料與模型訓練介面
-<img width="1890" height="348" alt="image" src="https://github.com/user-attachments/assets/fdcff7eb-167b-418e-87d3-4de9adb25285" />
+<img width="1624" height="280" alt="image" src="https://github.com/user-attachments/assets/5fcb78f6-b791-48f2-a8e9-84a2a46caddf" />
 
 ### 2.個性化聊天模型介面
-<img width="1656" height="828" alt="image" src="https://github.com/user-attachments/assets/cd72b78a-f04a-4875-98f5-1965ee03d1e5" />
+<img width="1654" height="816" alt="image" src="https://github.com/user-attachments/assets/4536d845-463a-4d33-aa71-36e8a0f75119" />
 
 ### 3.事件記事本介面
-<img width="1644" height="424" alt="image" src="https://github.com/user-attachments/assets/79c3d142-bd9a-48e6-9f3d-c318c71bec32" />
-
+<img width="1646" height="426" alt="image" src="https://github.com/user-attachments/assets/38038eb5-20b6-4a56-b9bd-cb326dc8df1f" />
 
 
 ## 專案背景與團隊
