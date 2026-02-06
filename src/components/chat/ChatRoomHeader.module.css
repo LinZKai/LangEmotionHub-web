@@ -1,0 +1,140 @@
+﻿.header {
+    background: white;
+    border-radius: 10px 10px 0px 0px;
+    position: relative;
+    overflow: visible;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-right: 25px;
+}
+
+.goBack {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.share {
+    width: 65px;
+    height: 65px;
+    cursor: pointer;
+}
+
+.question {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.3s, filter 0.3s ease-in-out;
+}
+
+.question:hover {
+    transform: scale(1.1); /* 放大 */
+    filter: brightness(1.25); /* 變亮 */
+}
+
+.infoBtn {
+    position: relative;
+}
+
+.tooltip {
+    position: absolute;
+    bottom: 80px;
+    right: -15px;
+    transform: translateX(-50%);
+    background-color:  #c6afc2;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    white-space: nowrap;
+    animation: slideUpFade 2s ease forwards; /* 加入動畫 */
+
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+@keyframes slideUpFade {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, 20px); /* 從圖片下方開始 */
+    }
+    50% {
+        opacity: 1;
+        transform: translate(-50%, 0); /* 到達圖片上方 */
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -10px); /* 繼續向上並消失 */
+    }
+}
+
+
+.lightRays {
+    position: absolute;
+    top: 5px;
+    left: 13px;
+    display: none;
+    pointer-events: none; /* 防止干擾點擊 */
+}
+
+.lightRay {
+    position: absolute;
+    width: 3px;
+    height: 8px;
+    border-radius: 5px;
+    background-color: rgba(255, 223, 0, 0.9); /* 金黃色光線 */
+    transform-origin: center bottom;
+    opacity: 0;
+    animation: lightRayFade 0.7s ease-in-out infinite;
+}
+
+.lightRay:nth-child(1) {
+    transform: rotate(-80deg) translateY(-20px);
+}
+.lightRay:nth-child(2) {
+    transform: rotate(-40deg) translateY(-20px);
+}
+.lightRay:nth-child(3) {
+    transform: rotate(0deg) translateY(-20px);
+}
+.lightRay:nth-child(4) {
+    transform: rotate(40deg) translateY(-20px);
+}
+.lightRay:nth-child(5) {
+    transform: rotate(80deg) translateY(-20px);
+}
+
+@keyframes lightRayFade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.infoBtn:hover .lightRays {
+    display: block;
+}

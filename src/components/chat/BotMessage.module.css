@@ -1,0 +1,40 @@
+﻿.messageContainer {
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+}
+
+.avatar {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: rgb(217, 217, 217);
+    margin-top: 15px;
+    object-fit: cover;
+}
+
+.messageBubble {
+    margin-left: 40px;
+    max-width: 60%;
+    background: linear-gradient(to right, #d4daf2, #e0e4f5, #e8ebf2);
+    border-top-left-radius: 0px;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.messageBubble::after {
+    content: "";
+    position: absolute;
+    top: 90%;
+    left: 72px;
+    border-width: 15px 0 10px 50px;
+    border-style: solid;
+    border-color: #d4daf2 transparent transparent transparent;
+    transform: translateY(-160%) rotate(-20deg);
+}

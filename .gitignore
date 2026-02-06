@@ -1,0 +1,17 @@
+﻿# Node
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Environment
+.env
+
+# Logs & temp
+*.log
+*.tmp
+
+# Backup / editor
+backup/
+.history/

@@ -1,0 +1,90 @@
+﻿.barContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    max-width: 130px;
+    min-width: 115px;
+    background: linear-gradient(to bottom, #503958, #82678b);
+    border-radius: 30px;
+}
+
+.userIcon {
+    width: 70px;
+    height: 70px;
+    margin-top: 50%;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.userIconRadius {
+    border-radius: 40%;
+}
+
+.userInfo {
+    color: white;
+    font-size: 14px;
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    margin-bottom: 5px;
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+    margin-top: 15%;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.logout {
+    margin-top: 35%;
+    margin-bottom: 30%;
+    margin-right: 7px;
+    width: 65px;
+    height: 65px;
+    cursor: pointer;
+}
+
+.illustration {
+    font-size: 14px;
+    color: rgb(166, 166, 166);
+}
+
+.illustration2 {
+    font-size: 14px;
+    color: rgb(166, 166, 166);
+    margin-bottom: 30px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    margin-top: 30px;
+    margin-left: 8px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: blanchedalmond;
+    cursor: pointer;
+}
+
+.iconContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.emptyIndicator {
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+}
+
+.activeIndicator {
+    width: 15px;
+    height: 15px;
+    background-color: #3aabc0;
+    border-radius: 50%;
+}
